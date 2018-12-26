@@ -1,0 +1,43 @@
+{
+  "name": "slexx/laravel-webp",
+  "type": "library",
+  "description": "Detect webp support in laravel framework",
+  "keywords": [
+    "webp",
+    "laravel",
+    "blade"
+  ],
+  "homepage": "https://github.com/slexx1234/laravel-webp",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Aleksei Shchepkin",
+      "email": "slexx1234@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "slexx1234@gmail.com"
+  },
+  "require": {
+    "php" : ">=7.0",
+    "illuminate/support": "^5.7"
+  },
+  "require-dev": {},
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "Slexx\\LaravelWebp\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Slexx\\LaravelWebp\\LaravelWebpServiceProvider"
+      ]
+    }
+  }
+}
